@@ -1,0 +1,526 @@
+<!Doctype html>
+	<html>
+		<head>
+			<title>
+				Transition Webpage
+			</title>
+			<meta charset="UTF-8">
+			<meta name="Description" content="This is a single web page">
+			<meta name="Author" content="Vaishnavi Didewar">
+			<meta name="Keywords" content="HTML, CSS">
+			<meta http-equiv="refresh" content="">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+			<link rel="Stylesheet" href="index.css"></link>
+		</head>
+		<body>
+			<header>
+				<nav>
+					<h2>Digi Transition</h2>
+					<ul>
+						<li><a href="#Home">Home</a></li>
+						<li><a href="#About">About Us</a></li>
+						<li><a href="#Contact">Contact Us</a></li>
+						<li><button>Sign Up</button></li>
+						<li><button>Log In</button></li>
+					</ul>
+				</nav>
+			</header>
+			<main>	
+				<aside>	
+					<p><a href="#Transition">Transition</a></p>
+					<p><a href="#transition-Property">transition-property</a></p>
+					<p><a href="#transition-delay">transition-delay</a></p>
+					<p><a href="#transition-duration">transition-duration</a></p>
+					<p><a href="#transition-timing-function">transtion-timing-function</a></p>
+					<p><a href="#ease">ease</a></p>
+					<p><a href="#ease-in">ease-in</a></p>
+					<p><a href="#ease-out">ease-out</a></p>
+					<p><a href="#ease-in-out">ease-in-out</a></p>
+					<p><a href="#linear">linear</a></p>
+					<p><a href="#Examples">Examples</a></p>
+				</aside>
+				<section id="Web-info">
+					<section id="Home">
+						<section>
+							<center>
+								<h1>Learn Web Development with Easy Notes</h1>
+								<p>Master HTML, CSS, and JavaScript through simple, well-organized, and beginner-friendly notes.</p>
+								<p>Whether you're a student, beginner, or aspiring web developer, our platform provides clear explanations, examples, and practical concepts to help you build a strong foundation in web development.</p>
+							</center>
+						</section>
+						<section id="home-content">
+							<div id="today">
+								<center>
+									<h2>Start Learning Today!</h2>
+									<div class="div1">
+										<p>📚 Easy-to-understand notes</p>
+										<p>💻 Practical code examples</p>
+									</div>
+									<div class="div2">
+										<p>🚀 Beginner to advanced concepts </p>
+										<p>🎯 Free learning resources</p>
+									</div>
+								</center>
+							</div>
+							<div id="button">
+									<p><button>Explore Notes</button></p>
+									<p><button>Start Learning</button></p>
+							</div>
+						</section>
+						<section id="Learn">
+							<center>
+								<h2>Our Learning Resources</h2>
+							</center>
+							<div id="HTMl">
+								<h3>HTML Notes</h3>
+								<p>Learn the structure of web pages with comprehensive HTML notes covering tags, forms, tables, semantic elements, and more.</p>
+							</div>
+							<div id="CSS">
+								<h3>CSS Notes</h3>
+								<p>Understand styling techniques, layouts, animations, Flexbox, Grid, responsive design, and modern CSS concepts.</p>
+							</div>
+							<div id="Js">
+								<h3>JavaScript Notes</h3>
+								<p>Explore programming fundamentals, DOM manipulation, events, functions, objects, arrays, ES6 features, and interactive web development.</p>
+							</div>	
+						</section>
+					</section>
+					<section id="About">
+						<section id="About1">
+							<center>
+								<section id="About11">
+									<h1>About Us</h1>
+									<p>Welcome to Web Notes Hub, your learning partner for web development.</p>
+									<p>Our goal is to make learning HTML, CSS, and JavaScript simple, accessible, and effective for everyone. We provide structured notes and practical examples that help students and beginners understand web development concepts without confusion.</p>
+								</section>
+								<section id="About12">
+									<h2>Our Mission</h2>
+									<p>To provide high-quality and easy-to-understand web development notes that help learners build their skills and confidence.</p>
+								</section>
+							</center>
+						</section>
+						<section id="About2">
+							<h2>What We Offer</h2>
+							<section>	
+								<div>
+									<p>HTML Tutorials & Notes</p>
+									<p>CSS Learning Resources</p>
+								</div>
+								<div>
+									<p>JavaScript Notes</p>
+									<p>Code Examples</p>
+								</div>
+								<div>
+									<p>Quick Revision Guides</p>
+									<p>Beginner-Friendly Explanations</p>
+								</div>
+							</section>
+						</section>
+					</section>
+					<section id="Transition">
+						<h1>CSS Transition</h1>
+						<h2>What is CSS Transition?</h2>
+						<p>A CSS transition smoothly animates a property change from one value to another over a specified duration. It runs automatically when a property value changes (e.g., on :hover, class change, or JS update).</p>
+						<p>The CSS transition property is a shorthand property for:</p>
+						<ul>
+							<li>transition-property</li>
+							<li>transition-duration</li>
+							<li>transition-timing-function</li>
+							<li>transition-delay</li>
+						</ul>
+						<hr>
+						<section>
+							<section id="Syn">
+								<h3>Syntax</h3>
+								<div>
+									<pre>selector{</pre>
+									<pre>	transition: transition-property</pre>
+									<pre>transition-duration transition-timing-function</pre> 
+									<pre> transition-delay;</pre>
+									<pre>}</pre>
+								</div>
+							</section>
+							<section id="Ex">
+								<h3>Examples</h3>
+								<div>
+									<pre>.box{</pre>
+									<pre>	transition: height 2s linear 0.5s;</pre> 
+									<pre>}</pre>
+								</div>
+							</section>
+						</section>
+					</section>
+					<section id="transition-Property">
+						<h2>What is CSS transition-property?</h2>
+						<p>The transition-property property specifies the name of the CSS property the transition effect is for (the transition effect will start when the specified CSS property changes).</p>
+						<hr>
+						<section class="Syn-Ex">
+							<section class="Syn">
+								<h3>Syntax</h3>
+								<div>
+									<pre>selector{</pre>
+									<pre>	transition:<mark>transition-property</mark></pre>
+									<pre>transition-duration transition-timing-function</pre> 
+									<pre> transition-delay;</pre>
+									<pre>}</pre>
+								</div>
+							</section>
+							<section class="Ex">
+								<h3>Examples</h3>
+								<div>
+									<pre>.box{</pre>
+									<pre>	transition: <mark>height</mark> 2s linear 0.5s;</pre> 
+									<pre>}</pre>
+								</div>
+							</section>
+						</section>
+					</section>
+					<section id="transition-delay">
+						<h2>What is CSS transition-delay?</h2>
+						<p>TThe transition-delay property specifies when the transition effect will start.The transition-delay value is defined in seconds (s) or milliseconds (ms).</p>
+						<hr>
+						<section class="Syn-Ex">
+							<section class="Syn">
+								<h3>Syntax</h3>
+								<div>
+									<pre>selector{</pre>
+									<pre>	transition: transition-property</pre>
+									<pre>transition-duration transition-timing-function</pre> 
+									<pre> <mark>transition-delay</mark>;</pre>
+									<pre>}</pre>
+								</div>
+							</section>
+							<section class="Ex">
+								<h3>Examples</h3>
+								<div>
+									<pre>.box{</pre>
+									<pre>	transition: height 2s linear <mark>0.5s</mark>;</pre> 
+									<pre>}</pre>
+								</div>
+							</section>
+						</section>
+					</section>
+					<section id="transition-duration">
+						<h2>What is CSS transition-duration?</h2>
+						<p>The transition-duration property specifies how many seconds (s) or milliseconds (ms) a transition effect takes to complete.</p>
+						<hr>
+						<section class="Syn-Ex">
+							<section class="Syn">
+								<h3>Syntax</h3>
+								<div>
+									<pre>selector{</pre>
+									<pre>	transition: transition-property</pre>
+									<pre><mark>transition-duration</mark> transition-timing-function</pre> 
+									<pre> transition-delay;</pre>
+									<pre>}</pre>
+								</div>
+							</section>
+							<section class="Ex">
+								<h3>Examples</h3>
+								<div>
+									<pre>.box{</pre>
+									<pre>	transition: height <mark>2s</mark> linear 0.5s;</pre> 
+									<pre>}</pre>
+								</div>
+							</section>
+						</section>
+					</section>
+					<section id="transition-timing-function">
+						<h2>What is CSS transition-timing-function?</h2>
+						<p>The transition-timing-function property specifies the speed curve of the transition effect. This property allows a transition effect to change speed over its duration.</p>
+						<hr>
+						<section class="Syn-Ex">
+							<section class="Syn">
+								<h3>Syntax</h3>
+								<div>
+									<pre>selector{</pre>
+									<pre>	transition: transition-property</pre>
+									<pre>transition-duration <mark>transition-timing-function</mark></pre> 
+									<pre> transition-delay;</pre>
+									<pre>}</pre>
+								</div>
+							</section>
+							<section class="Ex">
+								<h3>Examples</h3>
+								<div>
+									<pre>.box{</pre>
+									<pre>	transition: height 2s <mark>linear</mark> 0.5s;</pre> 
+									<pre>}</pre>
+								</div>
+							</section>
+						</section>
+					</section>
+					<section id="ease">
+						<h2>What is CSS ease?</h2>
+						<p>Default value. Specifies a transition effect with a slow start, then fast, then end slowly.</p>
+						<section class="Examples">
+							<h4>HTML Example</h4>
+							<section class="html-ex">
+								<div class="html">
+									<h5>HTML</h5>
+									<div>
+										<pre><span><</span><span>div class="box"</span><span>></span></pre>
+										<pre>	Hover Me</pre>
+										<pre><span><</span><span>/div</span><span>></span></pre>
+									</div>
+								</div>
+								<div class="css">
+									<h5>CSS</h5>
+									<div>
+										<pre>.box{</pre>
+										<pre>	width: 100px;</pre>
+										<pre>	height: 100px;</pre>
+										<pre>	transition:height 2s <mark>ease</mark></pre>
+										<pre> 0s, width 2s <mark>ease</mark> 0s;</pre>
+										<pre>}</pre>
+										<pre>.box:hover</pre>
+										<pre>	width: 125px;</pre>
+										<pre>	height: 125px;</pre>
+										<pre>}</pre>
+									</div>
+								</div>
+								<div class="output">
+									<h5>OUTPUT</h5>
+									<div class="box">
+										Hover me
+									</div>
+								</div>
+							</section>
+						</section>
+					</section>
+					<section id="ease-in">
+						<hr>
+						<h2>What is CSS ease-in?</h2>
+						<p>Specifies a transition effect with a slow start.</p>
+						<section class="Examples">
+							<h4>HTML Example</h4>
+							<section class="html-ex">
+								<div class="html">
+									<h5>HTML</h5>
+									<div>
+										<pre><span><</span><span>div class="box"</span><span>></span></pre>
+										<pre>	Hover Me</pre>
+										<pre><span><</span><span>/div</span><span>></span></pre>
+									</div>
+								</div>
+								<div class="css">
+									<h5>CSS</h5>
+									<div>
+										<pre>.box{</pre>
+										<pre>	width: 100px;</pre>
+										<pre>	height: 100px;</pre>
+										<pre>   transition:height 2s <mark>ease-in</mark></pre>
+										<pre> 0s, width 2s <mark>ease-n</mark> 0s;</pre>
+										<pre>}</pre>
+										<pre>.box:hover</pre>
+										<pre>	width: 125px;</pre>
+										<pre>	height: 125px;</pre>
+										<pre>}</pre>
+									</div>
+								</div>
+								<div class="output">
+									<h5>OUTPUT</h5>
+									<div class="box">
+										Hover me
+									</div>
+								</div>
+							</section>
+						</section>
+					</section>
+					<section id="ease-out">
+						<hr>
+						<h2>What is CSS ease-out?</h2>
+						<p>Specifies a transition effect with a slow end.</p>
+						<section class="Examples">
+							<h4>HTML Example</h4>
+							<section class="html-ex">
+								<div class="html">
+									<h5>HTML</h5>
+									<div>
+										<pre><span><</span><span>div class="box"</span><span>></span></pre>
+										<pre>	Hover Me</pre>
+										<pre><span><</span><span>/div</span><span>></span></pre>
+									</div>
+								</div>
+								<div class="css">
+									<h5>CSS</h5>
+									<div>
+										<pre>.box{</pre>
+										<pre>	width: 100px;</pre>
+										<pre>	height: 100px;</pre>
+										<pre>   transition:height 2s <mark>ease-out</mark></pre>
+										<pre> 0s, width 2s <mark>ease-out</mark> 0s;</pre>
+										<pre>}</pre>
+										<pre>.box:hover</pre>
+										<pre>	width: 125px;</pre>
+										<pre>	height: 125px;</pre>
+										<pre>}</pre>
+									</div>
+								</div>
+								<div class="output">
+									<h5>OUTPUT</h5>
+									<div class="box">
+										Hover me
+									</div>
+								</div>
+							</section>
+						</section>
+					</section>
+					<section id="ease-in-out">
+						<hr>
+						<h2>What is CSS ease-in-out?</h2>
+						<p>Specifies a transition effect with a slow start and end.</p>
+						<section class="Examples">
+							<h4>HTML Example</h4>
+							<section class="html-ex">
+								<div class="html">
+									<h5>HTML</h5>
+									<div>
+										<pre><span><</span><span>div class="box"</span><span>></span></pre>
+										<pre>	Hover Me</pre>
+										<pre><span><</span><span>/div</span><span>></span></pre>
+									</div>
+								</div>
+								<div class="css">
+									<h5>CSS</h5>
+									<div>
+										<pre>.box{</pre>
+										<pre>	width: 100px;</pre>
+										<pre>	height: 100px;</pre>
+										<pre>   transition:height 2s <mark>ease-in-out</mark></pre>
+										<pre> 0s, width 2s <mark>ease-in-out</mark> 0s;</pre>
+										<pre>}</pre>
+										<pre>.box:hover</pre>
+										<pre>	width: 125px;</pre>
+										<pre>	height: 125px;</pre>
+										<pre>}</pre>
+									</div>
+								</div>
+								<div class="output">
+									<h5>OUTPUT</h5>
+									<div class="box">
+										Hover me
+									</div>
+								</div>
+							</section>
+						</section>
+					</section>
+					<section id="linear">
+						<hr>
+						<h2>What is CSS linear?</h2>
+						<p>Specifies a transition effect with the same speed from start to end.</p>
+						<section class="Examples">
+							<h4>HTML Example</h4>
+							<section class="html-ex">
+								<div class="html">
+									<h5>HTML</h5>
+									<div>
+										<pre><span><</span><span>div class="box"</span><span>></span></pre>
+										<pre>	Hover Me</pre>
+										<pre><span><</span><span>/div</span><span>></span></pre>
+									</div>
+								</div>
+								<div class="css">
+									<h5>CSS</h5>
+									<div>
+										<pre>.box{</pre>
+										<pre>	width: 100px;</pre>
+										<pre>	height: 100px;</pre>
+										<pre>   transition:height 2s <mark>linear</mark></pre>
+										<pre> 0s, width 2s <mark>linear</mark> 0s;</pre>
+										<pre>}</pre>
+										<pre>.box:hover</pre>
+										<pre>	width: 125px;</pre>
+										<pre>	height: 125px;</pre>
+										<pre>}</pre>
+									</div>
+								</div>
+								<div class="output">
+									<h5>OUTPUT</h5>
+									<div class="box">
+										Hover me
+									</div>
+								</div>
+							</section>
+						</section>
+					</section>
+					<section id="Examples">
+						<hr>
+						<h2>Examples</h2>
+						<section class="all-ex">
+							<div id="tra-ease" class="tra">
+								I am ease
+							</div>
+							<div id="tra-ease-in" class="tra">
+								I am ease-in
+							</div>
+							<div id="tra-ease-out" class="tra">
+								I am ease-out
+							</div>
+							<div id="tra-ease-in-out" class="tra">
+								I am ease-in-out
+							</div>
+							<div id="tra-linear" class="tra">
+								I am linear
+							</div>
+						</section>
+					</section>
+					
+					<section id="Contact">
+						<section id="Contact1">
+							
+						</section>
+					</section>
+				</section>
+			</main>
+		</body>
+	</html>
+	
+	<!--Contact Us
+
+Have questions, suggestions, or feedback? We'd love to hear from you!
+
+Get In Touch
+
+📧 Email: support@webnoteshub.com
+
+🌐 Website: www.webnoteshub.com
+
+📍 Location: India
+
+
+Send Us a Message
+
+Use the contact form below to reach out to us.
+
+Form Fields:
+
+Name
+Email
+Subject
+Message
+
+Button:
+Send Message
+
+
+Feedback
+
+Your feedback helps us improve our content and provide better learning resources for everyone.
+
+Thank you for visiting Web Notes Hub. Happy Learning! 🚀
+
+Property     				 What it does         								Example
+transition-property			Specifies the CSS property you want to animate.		background-color, width, all
+transition-duration			How long the transition takes to complete.			0.5s, 300ms
+transition-timing-function	Controls the speed curve of the transition.			ease, linear, ease-in-out
+transition-delay			Defines a waiting time before the animation starts. 1s, 0s
+-->
+
+
+	  
