@@ -462,17 +462,227 @@
 							</div>
 						</section>
 					</section>
-					
-					<section id="Contact">
-						<section id="Contact1">
-							
+					<section class="ease">
+						<h2>What is CSS ease?</h2>
+						<p>Default value. Specifies a transition effect with a slow start, then fast, then end slowly.</p>
+						<section class="Examples">
+							<h4>HTML Example</h4>
+							<section class="html-ex">
+								<div class="html">
+									<h5>HTML</h5>
+									<div>
+										<pre><span><</span><span>div class="box"</span><span>></span></pre>
+										<pre>	Hover Me</pre>
+										<pre><span><</span><span>/div</span><span>></span></pre>
+									</div>
+								</div>
+								<div class="css">
+									<h5>CSS</h5>
+									<div>
+										<pre>.box{</pre>
+										<pre>	width: 100px;</pre>
+										<pre>	height: 100px;</pre>
+										<pre>   animation: ease 2s ease 0s</pre> 
+										<pre>infinite alternate;</pre>
+										<pre>}</pre>
+										<pre>@keyframes ease{</pre>
+										<pre>	from{</pre>
+										<pre>	background-color:red;</pre>
+										<pre>		}</pre>
+										<pre>	to{</pre>
+										<pre>	background-color:black;</pre>
+										<pre>		}</pre>
+										<pre>}</pre>
+									</div>
+								</div>
+								<div class="output">
+									<h5>OUTPUT</h5>
+									<div class="box">
+										Hover me
+									</div>
+								</div>
+							</section>
 						</section>
 					</section>
+					<section class="ease-in">
+						<hr>
+						<h2>What is CSS ease-in?</h2>
+						<p>Specifies a transition effect with a slow start.</p>
+						<section class="Examples">
+							<h4>HTML Example</h4>
+							<section class="html-ex">
+								<div class="html">
+									<h5>HTML</h5>
+									<div>
+										<pre><span><</span><span>div class="box"</span><span>></span></pre>
+										<pre>	Hover Me</pre>
+										<pre><span><</span><span>/div</span><span>></span></pre>
+									</div>
+								</div>
+								<div class="css">
+									<h5>CSS</h5>
+									<div>
+										<pre>.box{</pre>
+										<pre>	width: 100px;</pre>
+										<pre>	height: 100px;</pre>
+										<pre>  animation: ease-in 2s ease-in 0s</pre> 
+										<pre>infinite alternate;</pre>
+										<pre>}</pre>
+										<pre>@keyframes ease-in{</pre>
+										<pre>	from{</pre>
+										<pre>		margin-left:0cm;</pre>
+										<pre>		}</pre>
+										<pre>	to{</pre>
+										<pre>		margin-left:3.5cm;</pre>
+										<pre>		}</pre>
+										<pre>}</pre>
+									</div>
+								</div>
+								<div class="output">
+									<h5>OUTPUT</h5>
+									<div class="box">
+										Hover me
+									</div>
+								</div>
+							</section>
+						</section>
+					</section>
+					<section class="ease-out">
+						<hr>
+						<h2>What is CSS ease-out?</h2>
+						<p>Specifies a transition effect with a slow end.</p>
+						<section class="Examples">
+							<h4>HTML Example</h4>
+							<section class="html-ex">
+								<div class="html">
+									<h5>HTML</h5>
+									<div>
+										<pre><span><</span><span>div class="box"</span><span>></span></pre>
+										<pre>	Hover Me</pre>
+										<pre><span><</span><span>/div</span><span>></span></pre>
+									</div>
+								</div>
+								<div class="css">
+									<h5>CSS</h5>
+									<div>
+										<pre>.box{</pre>
+										<pre>	width: 100px;</pre>
+										<pre>	height: 100px;</pre>
+										<pre>   animation: ease-out 2s ease-out </pre>
+										<pre>0s infinite normal;</pre>
+										<pre>}</pre>
+										<pre>@keyframes ease-out{</pre>
+										<pre>	from{</pre>
+										<pre>font-family: 'Lobster Two', sans-serif;</pre>
+										<pre>		}</pre>
+										<pre>	to{</pre>
+										<pre>font-family: 'Audiowide', sans-serif;</pre>
+										<pre>		}</pre>
+										<pre>}</pre>
+									</div>
+								</div>
+								<div class="output">
+									<h5>OUTPUT</h5>
+									<div class="box">
+										Hover me
+									</div>
+								</div>
+							</section>
+						</section>
+					</section>
+					<section class="ease-in-out">
+						<hr>
+						<h2>What is CSS ease-in-out?</h2>
+						<p>Specifies a transition effect with a slow start and end.</p>
+						<section class="Examples">
+							<h4>HTML Example</h4>
+							<section class="html-ex">
+								<div class="html">
+									<h5>HTML</h5>
+									<div>
+										<pre><span><</span><span>div class="box"</span><span>></span></pre>
+										<pre>	Hover Me</pre>
+										<pre><span><</span><span>/div</span><span>></span></pre>
+									</div>
+								</div>
+								<div class="css">
+									<h5>CSS</h5>
+									<div>
+										<pre>.box{</pre>
+										<pre>	width: 100px;</pre>
+										<pre>	height: 100px;</pre>
+										<pre>   animation:ease-in-out 2s </pre>
+										<pre><mark>ease-in-out</mark> 0s infinite reverse;</pre>
+										<pre>}</pre>
+										<pre>@keyframes ease-out{</pre>
+										<pre>	from{</pre>
+										<pre>		text-align:left;</pre>
+										<pre>		}</pre>
+										<pre>	to{</pre>
+										<pre>		text-align:center;</pre>
+										<pre>		}</pre>
+										<pre>}</pre>
+									</div>
+								</div>
+								<div class="output">
+									<h5>OUTPUT</h5>
+									<div class="box">
+										Hover me
+									</div>
+								</div>
+							</section>
+						</section>
+					</section>
+					<section class="linear">
+						<hr>
+						<h2>What is CSS linear?</h2>
+						<p>Specifies a transition effect with the same speed from start to end.</p>
+						<section class="Examples">
+							<h4>HTML Example</h4>
+							<section class="html-ex">
+								<div class="html">
+									<h5>HTML</h5>
+									<div>
+										<pre><span><</span><span>div class="box"</span><span>></span></pre>
+										<pre>	Hover Me</pre>
+										<pre><span><</span><span>/div</span><span>></span></pre>
+									</div>
+								</div>
+								<div class="css">
+									<h5>CSS</h5>
+									<div>
+										<pre>.box{</pre>
+										<pre>	width: 100px;</pre>
+										<pre>	height: 100px;</pre>
+										<pre>   animation:linear 2s <mark>linear</mark> 0s</pre>
+										<pre>infinite alternate forwards;</pre>
+										<pre>}</pre>
+										<pre>@keyframes linear{</pre>
+										<pre>	from{</pre>
+										<pre>		line-height:50px;</pre>
+										<pre>		}</pre>
+										<pre>	to{</pre>
+										<pre>		line-height:150px;</pre>
+										<pre>		}</pre>
+										<pre>}</pre>
+									</div>
+								</div>
+								<div class="output">
+									<h5>OUTPUT</h5>
+									<div class="box">
+										Hover me
+									</div>
+								</div>
+							</section>
+						</section>
+					</section>
+					
+					
+					
 				</section>
 			</main>
 		</body>
 	</html>
 	
 	
-
 	  

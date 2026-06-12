@@ -623,13 +623,243 @@ aside > p > a{
 	z-index:3;
 	left:78%;
 }
-#Contact{
+.ease{
 	position:absolute;
 	width:90%;
 	left:5%;
 	right:5%;
-	margin-top:166cm;
+	margin-top:164cm;
 }
+.ease .html-ex{
+	position:absolute;
+	width:64%;
+	display:flex;
+	gap:50px;
+}
+.ease .html-ex > div{
+	position:absolute;
+	width:45%;
+	background:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+	padding:0.1cm 0.5cm 0.1cm 0.5cm;
+	border-radius:10px;
+	border:2px dashed purple;
+}
+.ease .html-ex > .css{
+	margin-left:7.5cm;
+}
+.ease .html-ex > .output{
+	margin-left:15cm;
+	height:6cm;
+}
+.ease .html-ex > .output > div{
+	width:100px;
+	height:100px;
+	text-align:center;
+	line-height: 100px;
+	margin-left:1.8cm;
+	border-radius:10px;
+	color:white;
+	animation:ease 2s ease 0s infinite alternate;
+}
+@keyframes ease{
+	from{
+		background-color:red;
+	}
+	to{
+		background-color:black;
+	}
+}
+.ease-in{
+	position:absolute;
+	width:90%;
+	left:5%;
+	right:5%;
+	margin-top:181cm;
+}
+.ease-in .html-ex{
+	position:absolute;
+	width:64%;
+	display:flex;
+	gap:50px;
+}
+.ease-in .html-ex > div{
+	position:absolute;
+	width:45%;
+	background:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+	padding:0.1cm 0.5cm 0.1cm 0.5cm;
+	border-radius:10px;
+	border:2px dashed purple;
+}
+.ease-in .html-ex > .css{
+	margin-left:7.5cm;
+}
+.ease-in .html-ex > .output{
+	margin-left:15cm;
+	height:6cm;
+}
+.ease-in .html-ex > .output > div{
+	width:100px;
+	height:100px;
+	background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+	text-align:center;
+	line-height: 100px;
+	margin-left:1.8cm;
+	border-radius:10px;
+	color:white;
+	animation: ease-in 2s ease-in 0s infinite alternate-reverse;
+}
+										@keyframes ease-in{
+	from{
+			margin-left:0cm;
+		}
+	to{
+		margin-left:3.5cm;
+	}
+}
+.ease-out{
+	position:absolute;
+	width:90%;
+	left:5%;
+	right:5%;
+	margin-top:200.5cm;
+}
+.ease-out .html-ex{
+	position:absolute;
+	width:64%;
+	display:flex;
+	gap:50px;
+}
+.ease-out .html-ex > div{
+	position:absolute;
+	width:45%;
+	background:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+	padding:0.1cm 0.5cm 0.1cm 0.5cm;
+	border-radius:10px;
+	border:2px dashed purple;
+}
+.ease-out .html-ex > .css{
+	margin-left:7.5cm;
+}
+.ease-out .html-ex > .output{
+	margin-left:15cm;
+	height:6cm;
+}
+.ease-out .html-ex > .output > div{
+	width:100px;
+	height:100px;
+	background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+	text-align:center;
+	line-height: 100px;
+	margin-left:1.8cm;
+	border-radius:10px;
+	color:white;
+	animation: ease-out 2s ease-out 0s infinite normal both;
+}
+@keyframes ease-out{
+	from{
+		font-family: 'Lobster Two', sans-serif;
+		}
+	to{
+		font-family: 'Audiowide', sans-serif;
+	}
+}
+.ease-in-out{
+	position:absolute;
+	width:90%;
+	left:5%;
+	right:5%;
+	margin-top:217.5cm;
+}
+.ease-in-out .html-ex{
+	position:absolute;
+	width:64%;
+	display:flex;
+	gap:50px;
+}
+.ease-in-out .html-ex > div{
+	position:absolute;
+	width:45%;
+	background:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+	padding:0.1cm 0.5cm 0.1cm 0.5cm;
+	border-radius:10px;
+	border:2px dashed purple;
+}
+.ease-in-out .html-ex > .css{
+	margin-left:7.5cm;
+}
+.ease-in-out .html-ex > .output{
+	margin-left:15cm;
+	height:6cm;
+}
+.ease-in-out .html-ex > .output > div{
+	width:100px;
+	height:100px;
+	background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+	line-height: 100px;
+	margin-left:1.8cm;
+	border-radius:10px;
+	color:white;
+	animation: ease-in-out 2s ease-in-out 0s infinite reverse backwards;
+}
+@keyframes ease-in-out{
+	from{
+		text-align:left;
+		}
+	to{
+		text-align:center;
+	}
+}
+.linear{
+	position:absolute;
+	width:90%;
+	left:5%;
+	right:5%;
+	margin-top:235cm;
+}
+.linear .html-ex{
+	position:absolute;
+	width:64%;
+	display:flex;
+	gap:50px;
+}
+.linear .html-ex > div{
+	position:absolute;
+	width:45%;
+	background:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+	padding:0.1cm 0.5cm 0.1cm 0.5cm;
+	border-radius:10px;
+	border:2px dashed purple;
+}
+.linear .html-ex > .css{
+	margin-left:7.5cm;
+}
+.linear .html-ex > .output{
+	margin-left:15cm;
+	height:6cm;
+}
+.linear .html-ex > .output > div{
+	width:100px;
+	height:100px;
+	background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+	text-align:center;
+	font-size:20px;
+	line-height: 100px;
+	margin-left:1.8cm;
+	border-radius:10px;
+	color:white;
+	animation: linear 2s linear 0s infinite alternate forwards;
+}
+@keyframes linear{
+	from{
+		line-height:50px;
+	}
+	to{
+		line-height:150px;
+	}
+}
+
+
+
 
 
 
